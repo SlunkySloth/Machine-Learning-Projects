@@ -1,0 +1,82 @@
+[
+  {
+    "author": "Sisodia & Sisodia (2018)",
+    "title": "Prediction of Diabetes using Classification Algorithms",
+    "short": "Diabetes classification algorithms",
+    "method": "DT, SVM and Naive Bayes",
+    "relevance": "Compare multiple baseline learners",
+    "url": "https://doi.org/10.1016/j.procs.2018.05.122"
+  },
+  {
+    "author": "Zou et al. (2018)",
+    "title": "Predicting Diabetes Mellitus With Machine Learning Techniques",
+    "short": "Diabetes with machine learning",
+    "method": "RF, DT, neural nets; PCA / mRMR",
+    "relevance": "Test feature selection and ANN",
+    "url": "https://doi.org/10.3389/fgene.2018.00515"
+  },
+  {
+    "author": "Sneha & Gangil (2019)",
+    "title": "Analysis of diabetes mellitus for early prediction using optimal features selection",
+    "short": "Diabetes and optimal feature selection",
+    "method": "Feature selection; classifier comparison",
+    "relevance": "Measure feature-selection benefit",
+    "url": "https://doi.org/10.1186/s40537-019-0175-6"
+  },
+  {
+    "author": "Tasin et al. (2023)",
+    "title": "Diabetes prediction using machine learning and explainable AI techniques",
+    "short": "Diabetes prediction with explainable AI",
+    "method": "ML ensembles, SHAP / LIME, app",
+    "relevance": "Explain the deployed classifier",
+    "url": "https://doi.org/10.1049/htl2.12039"
+  },
+  {
+    "author": "Hasan et al. (2025)",
+    "title": "Towards Transparent Diabetes Prediction: Combining AutoML and Explainable AI for Improved Clinical Insights",
+    "short": "Transparent diabetes: AutoML + XAI",
+    "method": "AutoGluon, XAI, Streamlit interface",
+    "relevance": "Compare models and what-if outputs",
+    "url": "https://doi.org/10.3390/info16010007"
+  },
+  {
+    "author": "Guo et al. (2017)",
+    "title": "On Calibration of Modern Neural Networks",
+    "short": "Calibration of modern neural networks",
+    "method": "Confidence calibration; temperature scaling",
+    "relevance": "Measure Brier and ECE separately",
+    "url": "https://proceedings.mlr.press/v70/guo17a.html"
+  },
+  {
+    "author": "Lundberg & Lee (2017)",
+    "title": "A Unified Approach to Interpreting Model Predictions",
+    "short": "Unified interpretation of predictions",
+    "method": "SHAP additive feature attribution",
+    "relevance": "Explain full pipeline; check additivity",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html"
+  },
+  {
+    "author": "Breiman (2001)",
+    "title": "Random Forests",
+    "short": "Random Forests",
+    "method": "Randomized ensembles of decision trees",
+    "relevance": "Tree-ensemble comparison baseline",
+    "url": "https://doi.org/10.1023/A:1010933404324"
+  },
+  {
+    "author": "Friedman (2001)",
+    "title": "Greedy function approximation: A gradient boosting machine",
+    "short": "A gradient boosting machine",
+    "method": "Stagewise additive / gradient boosting",
+    "relevance": "Boosting comparison baseline",
+    "url": "https://doi.org/10.1214/aos/1013203451"
+  },
+  {
+    "author": "Cortes & Vapnik (1995)",
+    "title": "Support-vector networks",
+    "short": "Support-vector networks",
+    "method": "Margin-based kernel classification",
+    "relevance": "Nonlinear SVM comparison baseline",
+    "url": "https://doi.org/10.1007/BF00994018"
+  }
+]

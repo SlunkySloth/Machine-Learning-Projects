@@ -1,0 +1,13 @@
+{
+  "a": "CalibratedEnsemble",
+  "b": "ANN",
+  "mcnemar_exact_p": 1.0,
+  "a_only_correct": 2,
+  "b_only_correct": 2,
+  "auc_difference_a_minus_b": 0.01518518518518519,
+  "paired_auc_difference_95_ci": [
+    0.0005555555555555314,
+    0.03203703703703687
+  ],
+  "note": "Single prespecified comparison; not proof of equivalence or clinical superiority."
+}

@@ -1,0 +1,27 @@
+test_bootstrap_repeatable (test_core.ProjectTests.test_bootstrap_repeatable) ... ok
+test_cross_validation_imputation_uses_fold_training_only (test_core.ProjectTests.test_cross_validation_imputation_uses_fold_training_only) ... ok
+test_engineered_values_and_names (test_core.ProjectTests.test_engineered_values_and_names) ... ok
+test_exact_shapley_known_linear_model (test_core.ProjectTests.test_exact_shapley_known_linear_model) ... ok
+test_extrapolation_note (test_core.ProjectTests.test_extrapolation_note) ... ok
+test_http_predict_and_what_if (test_core.ProjectTests.test_http_predict_and_what_if) ... ok
+test_http_static_results_and_traversal (test_core.ProjectTests.test_http_static_results_and_traversal) ... ok
+test_http_validation_origin_and_content_type (test_core.ProjectTests.test_http_validation_origin_and_content_type) ... ok
+test_identical_models_paired_comparison (test_core.ProjectTests.test_identical_models_paired_comparison) ... ok
+test_imputer_not_updated_by_inference (test_core.ProjectTests.test_imputer_not_updated_by_inference) ... ok
+test_invalid_inputs_rejected (test_core.ProjectTests.test_invalid_inputs_rejected) ... ok
+test_metrics_against_known_confusion_matrix (test_core.ProjectTests.test_metrics_against_known_confusion_matrix) ... ok
+test_no_target_or_reordered_features_allowed (test_core.ProjectTests.test_no_target_or_reordered_features_allowed) ... ok
+test_partitions_disjoint_and_exhaustive (test_core.ProjectTests.test_partitions_disjoint_and_exhaustive) ... ok
+test_prediction_and_explanation (test_core.ProjectTests.test_prediction_and_explanation) ... ok
+test_real_dataset_and_fingerprint (test_core.ProjectTests.test_real_dataset_and_fingerprint) ... ok
+test_saved_explanations_match_deployed_model (test_core.ProjectTests.test_saved_explanations_match_deployed_model) ... ok
+test_serialized_inference_matches_test_predictions (test_core.ProjectTests.test_serialized_inference_matches_test_predictions) ... ok
+test_threshold_tie_prefers_nearest_half (test_core.ProjectTests.test_threshold_tie_prefers_nearest_half) ... ok
+test_unknown_and_zero_measurements_supported (test_core.ProjectTests.test_unknown_and_zero_measurements_supported) ... ok
+test_what_if_equal_value_zero_difference (test_core.ProjectTests.test_what_if_equal_value_zero_difference) ... ok
+test_zero_sentinels_and_valid_zero_pregnancy (test_core.ProjectTests.test_zero_sentinels_and_valid_zero_pregnancy) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 4.172s
+
+OK

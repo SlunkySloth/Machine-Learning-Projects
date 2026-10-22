@@ -1,0 +1,10 @@
+{
+  "regression_tests_passed": 22,
+  "notebook_executed_code_cells": 8,
+  "notebook_error_outputs": 0,
+  "live_server_health": "ok; model_loaded=true",
+  "javascript_syntax": "node --check passed",
+  "pdf_presentation_pages": 14,
+  "pdf_layout_review": "Representative image slide rendered and inspected",
+  "browser_ui_testing": "Browser-based interaction and visual checks were not run; HTTP handlers and live health endpoint were verified."
+}

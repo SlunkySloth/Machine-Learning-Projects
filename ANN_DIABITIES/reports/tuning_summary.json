@@ -1,0 +1,55 @@
+{
+  "LogisticRegression": {
+    "best_params": {
+      "model__class_weight": "balanced",
+      "model__C": 0.05
+    },
+    "best_cv_auc": 0.820625,
+    "cv_auc_std": 0.015696364803850477,
+    "cv_train_auc": 0.8399348958333333
+  },
+  "RandomForest": {
+    "best_params": {
+      "model__min_samples_leaf": 10,
+      "model__max_features": "sqrt",
+      "model__max_depth": 5,
+      "model__class_weight": "balanced"
+    },
+    "best_cv_auc": 0.8151041666666667,
+    "cv_auc_std": 0.024268821447372423,
+    "cv_train_auc": 0.9014388020833334
+  },
+  "GradientBoosting": {
+    "best_params": {
+      "model__max_leaf_nodes": 7,
+      "model__max_iter": 80,
+      "model__learning_rate": 0.04,
+      "model__l2_regularization": 1
+    },
+    "best_cv_auc": 0.81375,
+    "cv_auc_std": 0.018803742424492724,
+    "cv_train_auc": 0.9197656249999999
+  },
+  "SVM": {
+    "best_params": {
+      "model__gamma": 0.03,
+      "model__class_weight": null,
+      "model__C": 5
+    },
+    "best_cv_auc": 0.8185416666666667,
+    "cv_auc_std": 0.024108676832441694,
+    "cv_train_auc": 0.8588216145833334
+  },
+  "ANN": {
+    "best_params": {
+      "model__learning_rate_init": 0.003,
+      "model__hidden_layer_sizes": [
+        32
+      ],
+      "model__alpha": 0.001
+    },
+    "best_cv_auc": 0.8213541666666668,
+    "cv_auc_std": 0.022647567780865307,
+    "cv_train_auc": 0.84349609375
+  }
+}

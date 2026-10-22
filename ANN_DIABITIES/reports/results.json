@@ -1,0 +1,511 @@
+{
+  "seed": 42,
+  "dataset_rows": 768,
+  "dataset_sha256": "6bfe5d0f379d17a0e0819b996407e3c09bf80febd4287f2ed212190dfff154af",
+  "split_sizes": {
+    "train": 460,
+    "validation": 154,
+    "test": 154
+  },
+  "split_positive_counts": {
+    "train": 160,
+    "validation": 54,
+    "test": 54
+  },
+  "selected_representation": "selected_5",
+  "best_cv_baseline": "ANN",
+  "tuning": {
+    "LogisticRegression": {
+      "best_params": {
+        "model__class_weight": "balanced",
+        "model__C": 0.05
+      },
+      "best_cv_auc": 0.820625,
+      "cv_auc_std": 0.015696364803850477,
+      "cv_train_auc": 0.8399348958333333
+    },
+    "RandomForest": {
+      "best_params": {
+        "model__min_samples_leaf": 10,
+        "model__max_features": "sqrt",
+        "model__max_depth": 5,
+        "model__class_weight": "balanced"
+      },
+      "best_cv_auc": 0.8151041666666667,
+      "cv_auc_std": 0.024268821447372423,
+      "cv_train_auc": 0.9014388020833334
+    },
+    "GradientBoosting": {
+      "best_params": {
+        "model__max_leaf_nodes": 7,
+        "model__max_iter": 80,
+        "model__learning_rate": 0.04,
+        "model__l2_regularization": 1
+      },
+      "best_cv_auc": 0.81375,
+      "cv_auc_std": 0.018803742424492724,
+      "cv_train_auc": 0.9197656249999999
+    },
+    "SVM": {
+      "best_params": {
+        "model__gamma": 0.03,
+        "model__class_weight": null,
+        "model__C": 5
+      },
+      "best_cv_auc": 0.8185416666666667,
+      "cv_auc_std": 0.024108676832441694,
+      "cv_train_auc": 0.8588216145833334
+    },
+    "ANN": {
+      "best_params": {
+        "model__learning_rate_init": 0.003,
+        "model__hidden_layer_sizes": [
+          32
+        ],
+        "model__alpha": 0.001
+      },
+      "best_cv_auc": 0.8213541666666668,
+      "cv_auc_std": 0.022647567780865307,
+      "cv_train_auc": 0.84349609375
+    }
+  },
+  "operating_threshold": 0.33,
+  "default_test_metrics": {
+    "LogisticRegression": {
+      "accuracy": 0.6948051948051948,
+      "precision": 0.5573770491803278,
+      "recall": 0.6296296296296297,
+      "f1": 0.591304347826087,
+      "specificity": 0.73,
+      "roc_auc": 0.7825925925925926,
+      "pr_auc": 0.6133652886198621,
+      "brier": 0.19054222549885128,
+      "log_loss": 0.5674947322575064,
+      "ece_10_bins": 0.11960665335571564,
+      "tn": 73,
+      "fp": 27,
+      "fn": 20,
+      "tp": 34,
+      "threshold": 0.5
+    },
+    "RandomForest": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6,
+      "recall": 0.7777777777777778,
+      "f1": 0.6774193548387096,
+      "specificity": 0.72,
+      "roc_auc": 0.8214814814814815,
+      "pr_auc": 0.6782393193413393,
+      "brier": 0.17197124819721032,
+      "log_loss": 0.5113369427791001,
+      "ece_10_bins": 0.0914306825978398,
+      "tn": 72,
+      "fp": 28,
+      "fn": 12,
+      "tp": 42,
+      "threshold": 0.5
+    },
+    "GradientBoosting": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6346153846153846,
+      "recall": 0.6111111111111112,
+      "f1": 0.6226415094339622,
+      "specificity": 0.81,
+      "roc_auc": 0.8222222222222222,
+      "pr_auc": 0.6771878100194576,
+      "brier": 0.16400104874502264,
+      "log_loss": 0.4885751962492786,
+      "ece_10_bins": 0.06406112772053624,
+      "tn": 81,
+      "fp": 19,
+      "fn": 21,
+      "tp": 33,
+      "threshold": 0.5
+    },
+    "SVM": {
+      "accuracy": 0.7077922077922078,
+      "precision": 0.6046511627906976,
+      "recall": 0.48148148148148145,
+      "f1": 0.5360824742268041,
+      "specificity": 0.83,
+      "roc_auc": 0.8003703703703703,
+      "pr_auc": 0.6658845967725406,
+      "brier": 0.1773427199548769,
+      "log_loss": 0.5231795013948564,
+      "ece_10_bins": 0.10138826365594694,
+      "tn": 83,
+      "fp": 17,
+      "fn": 28,
+      "tp": 26,
+      "threshold": 0.5
+    },
+    "ANN": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.625,
+      "recall": 0.5555555555555556,
+      "f1": 0.5882352941176471,
+      "specificity": 0.82,
+      "roc_auc": 0.7955555555555556,
+      "pr_auc": 0.6551399282923721,
+      "brier": 0.17989535037864635,
+      "log_loss": 0.526411803369703,
+      "ece_10_bins": 0.08531347508153886,
+      "tn": 82,
+      "fp": 18,
+      "fn": 24,
+      "tp": 30,
+      "threshold": 0.5
+    },
+    "DummyPrior": {
+      "accuracy": 0.6493506493506493,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "specificity": 1.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.35064935064935066,
+      "brier": 0.2277023543564186,
+      "log_loss": 0.6478652330659538,
+      "ece_10_bins": 0.0028232636928289256,
+      "tn": 100,
+      "fp": 0,
+      "fn": 54,
+      "tp": 0,
+      "threshold": 0.5
+    },
+    "RawEnsemble": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.6071428571428571,
+      "recall": 0.6296296296296297,
+      "f1": 0.6181818181818182,
+      "specificity": 0.78,
+      "roc_auc": 0.8107407407407408,
+      "pr_auc": 0.6710085140742388,
+      "brier": 0.17087177452205413,
+      "log_loss": 0.5075910634789429,
+      "ece_10_bins": 0.12454271246540614,
+      "tn": 78,
+      "fp": 22,
+      "fn": 20,
+      "tp": 34,
+      "threshold": 0.5
+    },
+    "CalibratedEnsemble": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.625,
+      "recall": 0.5555555555555556,
+      "f1": 0.5882352941176471,
+      "specificity": 0.82,
+      "roc_auc": 0.8107407407407408,
+      "pr_auc": 0.6710085140742388,
+      "brier": 0.1746147774823631,
+      "log_loss": 0.5161249857553073,
+      "ece_10_bins": 0.08632566183690304,
+      "tn": 82,
+      "fp": 18,
+      "fn": 24,
+      "tp": 30,
+      "threshold": 0.5
+    }
+  },
+  "operating_test_metrics": {
+    "LogisticRegression": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.6153846153846154,
+      "recall": 0.5925925925925926,
+      "f1": 0.6037735849056604,
+      "specificity": 0.8,
+      "roc_auc": 0.7825925925925926,
+      "pr_auc": 0.6133652886198621,
+      "brier": 0.19054222549885128,
+      "log_loss": 0.5674947322575064,
+      "ece_10_bins": 0.11960665335571564,
+      "tn": 80,
+      "fp": 20,
+      "fn": 22,
+      "tp": 32,
+      "threshold": 0.6
+    },
+    "RandomForest": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6166666666666667,
+      "recall": 0.6851851851851852,
+      "f1": 0.6491228070175439,
+      "specificity": 0.77,
+      "roc_auc": 0.8214814814814815,
+      "pr_auc": 0.6782393193413393,
+      "brier": 0.17197124819721032,
+      "log_loss": 0.5113369427791001,
+      "ece_10_bins": 0.0914306825978398,
+      "tn": 77,
+      "fp": 23,
+      "fn": 17,
+      "tp": 37,
+      "threshold": 0.56
+    },
+    "GradientBoosting": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.5921052631578947,
+      "recall": 0.8333333333333334,
+      "f1": 0.6923076923076923,
+      "specificity": 0.69,
+      "roc_auc": 0.8222222222222222,
+      "pr_auc": 0.6771878100194576,
+      "brier": 0.16400104874502264,
+      "log_loss": 0.4885751962492786,
+      "ece_10_bins": 0.06406112772053624,
+      "tn": 69,
+      "fp": 31,
+      "fn": 9,
+      "tp": 45,
+      "threshold": 0.28
+    },
+    "SVM": {
+      "accuracy": 0.7142857142857143,
+      "precision": 0.5714285714285714,
+      "recall": 0.7407407407407407,
+      "f1": 0.6451612903225806,
+      "specificity": 0.7,
+      "roc_auc": 0.8003703703703703,
+      "pr_auc": 0.6658845967725406,
+      "brier": 0.1773427199548769,
+      "log_loss": 0.5231795013948564,
+      "ece_10_bins": 0.10138826365594694,
+      "tn": 70,
+      "fp": 30,
+      "fn": 14,
+      "tp": 40,
+      "threshold": 0.30000000000000004
+    },
+    "ANN": {
+      "accuracy": 0.7012987012987013,
+      "precision": 0.5666666666666667,
+      "recall": 0.6296296296296297,
+      "f1": 0.5964912280701754,
+      "specificity": 0.74,
+      "roc_auc": 0.7955555555555556,
+      "pr_auc": 0.6551399282923721,
+      "brier": 0.17989535037864635,
+      "log_loss": 0.526411803369703,
+      "ece_10_bins": 0.08531347508153886,
+      "tn": 74,
+      "fp": 26,
+      "fn": 20,
+      "tp": 34,
+      "threshold": 0.39
+    },
+    "DummyPrior": {
+      "accuracy": 0.35064935064935066,
+      "precision": 0.35064935064935066,
+      "recall": 1.0,
+      "f1": 0.5192307692307693,
+      "specificity": 0.0,
+      "roc_auc": 0.5,
+      "pr_auc": 0.35064935064935066,
+      "brier": 0.2277023543564186,
+      "log_loss": 0.6478652330659538,
+      "ece_10_bins": 0.0028232636928289256,
+      "tn": 0,
+      "fp": 100,
+      "fn": 0,
+      "tp": 54,
+      "threshold": 0.33999999999999997
+    },
+    "RawEnsemble": {
+      "accuracy": 0.7077922077922078,
+      "precision": 0.5671641791044776,
+      "recall": 0.7037037037037037,
+      "f1": 0.628099173553719,
+      "specificity": 0.71,
+      "roc_auc": 0.8107407407407408,
+      "pr_auc": 0.6710085140742388,
+      "brier": 0.17087177452205413,
+      "log_loss": 0.5075910634789429,
+      "ece_10_bins": 0.12454271246540614,
+      "tn": 71,
+      "fp": 29,
+      "fn": 16,
+      "tp": 38,
+      "threshold": 0.4
+    },
+    "CalibratedEnsemble": {
+      "accuracy": 0.7142857142857143,
+      "precision": 0.5757575757575758,
+      "recall": 0.7037037037037037,
+      "f1": 0.6333333333333333,
+      "specificity": 0.72,
+      "roc_auc": 0.8107407407407408,
+      "pr_auc": 0.6710085140742388,
+      "brier": 0.1746147774823631,
+      "log_loss": 0.5161249857553073,
+      "ece_10_bins": 0.08632566183690304,
+      "tn": 72,
+      "fp": 28,
+      "fn": 16,
+      "tp": 38,
+      "threshold": 0.33
+    }
+  },
+  "ensemble_operating_95_ci": {
+    "accuracy": [
+      0.6428571428571429,
+      0.7857142857142857
+    ],
+    "precision": [
+      0.4931407583879293,
+      0.6721382136800452
+    ],
+    "recall": [
+      0.5740740740740741,
+      0.8148148148148148
+    ],
+    "f1": [
+      0.5426290894757587,
+      0.7192982456140351
+    ],
+    "specificity": [
+      0.63,
+      0.81
+    ],
+    "roc_auc": [
+      0.7360555555555556,
+      0.8759305555555555
+    ],
+    "pr_auc": [
+      0.5753726896423731,
+      0.7876869261833276
+    ],
+    "brier": [
+      0.14185186117338866,
+      0.210351372812372
+    ]
+  },
+  "statistical_comparison": {
+    "mcnemar_exact_p": 1.0,
+    "a_only_correct": 2,
+    "b_only_correct": 2,
+    "auc_difference_a_minus_b": 0.01518518518518519,
+    "paired_auc_difference_95_ci": [
+      0.0005555555555555314,
+      0.03203703703703687
+    ],
+    "note": "Single prespecified comparison; not proof of equivalence or clinical superiority."
+  },
+  "training_quality": [
+    {
+      "feature": "Pregnancies",
+      "missing_or_zero": 0,
+      "missing_pct": 0.0,
+      "zero_sentinel_count": 0,
+      "iqr_outliers": 1,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "median": 3.0
+    },
+    {
+      "feature": "Glucose",
+      "missing_or_zero": 4,
+      "missing_pct": 0.8695652173913043,
+      "zero_sentinel_count": 4,
+      "iqr_outliers": 0,
+      "minimum": 56.0,
+      "maximum": 197.0,
+      "median": 117.0
+    },
+    {
+      "feature": "BloodPressure",
+      "missing_or_zero": 18,
+      "missing_pct": 3.91304347826087,
+      "zero_sentinel_count": 18,
+      "iqr_outliers": 12,
+      "minimum": 24.0,
+      "maximum": 114.0,
+      "median": 72.0
+    },
+    {
+      "feature": "SkinThickness",
+      "missing_or_zero": 131,
+      "missing_pct": 28.47826086956522,
+      "zero_sentinel_count": 131,
+      "iqr_outliers": 2,
+      "minimum": 7.0,
+      "maximum": 99.0,
+      "median": 30.0
+    },
+    {
+      "feature": "Insulin",
+      "missing_or_zero": 215,
+      "missing_pct": 46.73913043478261,
+      "zero_sentinel_count": 215,
+      "iqr_outliers": 12,
+      "minimum": 16.0,
+      "maximum": 744.0,
+      "median": 125.0
+    },
+    {
+      "feature": "BMI",
+      "missing_or_zero": 6,
+      "missing_pct": 1.3043478260869565,
+      "zero_sentinel_count": 6,
+      "iqr_outliers": 6,
+      "minimum": 18.2,
+      "maximum": 67.1,
+      "median": 32.4
+    },
+    {
+      "feature": "DiabetesPedigreeFunction",
+      "missing_or_zero": 0,
+      "missing_pct": 0.0,
+      "zero_sentinel_count": 0,
+      "iqr_outliers": 16,
+      "minimum": 0.084,
+      "maximum": 2.329,
+      "median": 0.389
+    },
+    {
+      "feature": "Age",
+      "missing_or_zero": 0,
+      "missing_pct": 0.0,
+      "zero_sentinel_count": 0,
+      "iqr_outliers": 11,
+      "minimum": 21.0,
+      "maximum": 81.0,
+      "median": 29.0
+    }
+  ],
+  "training_target_correlations": {
+    "Pregnancies": 0.18210590556035094,
+    "Glucose": 0.5009808413097583,
+    "BloodPressure": 0.1598165397967545,
+    "SkinThickness": 0.24624603848378326,
+    "Insulin": 0.31076311941633195,
+    "BMI": 0.33650247993172755,
+    "DiabetesPedigreeFunction": 0.18227529429405256,
+    "Age": 0.2164993012275312
+  },
+  "largest_shapley_additivity_error": 2.220446049250313e-16,
+  "uncertainty_mean_component_std": 0.0698532872918277,
+  "bootstrap_iterations": 1000,
+  "candidates_per_model": 6,
+  "cv_folds": 5,
+  "python": "3.14.6",
+  "packages": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.1",
+    "joblib": "1.6.0"
+  },
+  "elapsed_seconds": 68.42,
+  "study_limitations": [
+    "Small historical single-population dataset; no external validation.",
+    "Outcome classification is not a validated future-onset forecast or diagnosis.",
+    "Feature representation and hyperparameters share training CV; CV best scores are selection-biased.",
+    "Calibration folds use training-selected hyperparameters; final holdout remains independent.",
+    "Bootstrap intervals condition on fixed fitted models and observed class prevalence.",
+    "Shapley background substitution ignores feature dependence and cannot establish causation.",
+    "Component disagreement is an uncalibrated heuristic, not predictive coverage.",
+    "Validation F1 threshold is exploratory and not a clinically approved operating point."
+  ]
+}

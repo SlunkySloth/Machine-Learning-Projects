@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diabetes Prediction System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+  <h1>Diabetes Prediction System</h1>
+  <p>ANN and machine learning project</p>
+  <nav aria-label="Main navigation"><a href="#predict">Prediction</a><a href="#evidence">Model results</a><a href="/presentation">Presentation</a></nav>
+</header>
+<main>
+  <section id="predict">
+    <h2>Enter patient measurements</h2>
+    <p>Use the units shown below. Leave unknown laboratory values blank; zero laboratory values are also treated as missing.</p>
+    <form id="prediction-form" class="panel">
+      <div class="form-heading"><h3>Input details</h3><button type="button" id="load-example">Load example</button></div>
+      <div class="fields">
+        <label>Pregnancies<small>Number of pregnancies</small><input name="Pregnancies" type="number" min="0" max="1000000" step="1" value="2" required></label>
+        <label>Age<small>Years, 21 and above</small><input name="Age" type="number" min="21" max="1000000" step="1" value="32" required></label>
+        <label>Glucose<small>2-hour OGTT plasma glucose (mg/dL)</small><input name="Glucose" type="number" min="0" max="1000000" step="any" value="120" placeholder="Unknown"></label>
+        <label>Blood pressure<small>Diastolic blood pressure (mmHg)</small><input name="BloodPressure" type="number" min="0" max="1000000" step="any" value="70" placeholder="Unknown"></label>
+        <label>Skin thickness<small>Triceps skinfold thickness (mm)</small><input name="SkinThickness" type="number" min="0" max="1000000" step="any" value="25" placeholder="Unknown"></label>
+        <label>Insulin<small>2-hour serum insulin (µU/mL)</small><input name="Insulin" type="number" min="0" max="1000000" step="any" value="85" placeholder="Unknown"></label>
+        <label>Body mass index<small>BMI (kg/m²)</small><input name="BMI" type="number" min="0" max="1000000" step="any" value="30" placeholder="Unknown"></label>
+        <label>Diabetes pedigree function<small>Dataset-specific family history score</small><input name="DiabetesPedigreeFunction" type="number" min="0.000001" max="1000000" step="any" value="0.45" required></label>
+      </div>
+      <p class="field-note">The pedigree score is not a yes/no family history answer. Entering 0 pregnancies is valid. Your inputs are not saved by the server.</p>
+      <button type="submit" id="predict-button" class="primary">Predict</button>
+      <p id="form-error" class="error" role="alert"></p>
+    </form>
+    <div class="panel" aria-live="polite">
+      <h3>Prediction result</h3>
+      <div id="empty-state"><p>Submit the form to see the result.</p></div>
+      <div id="prediction-output" hidden>
+        <p class="probability-line"><strong id="probability">—</strong> predicted positive-class probability</p>
+        <div class="probability-meter"><div id="meter-fill"></div><i id="threshold-mark"></i></div>
+        <p id="decision"></p>
+        <div class="mini-metrics"><p>Decision threshold: <strong id="threshold"></strong></p><p>Model disagreement (SD): <strong id="disagreement"></strong></p></div>
+        <p class="field-note">Disagreement shows variation among the five models. It is not a confidence interval or a probability of error.</p>
+        <details><summary>Feature contributions</summary><p id="explanation-baseline" class="field-note"></p><div id="contributions"></div><p class="field-note">Shapley contributions explain the model relative to 24 training examples. They describe associations, not causes. Orange contributions increase the probability; blue contributions decrease it.</p></details>
+        <details><summary>Individual model predictions</summary><div id="components"></div></details>
+        <ul id="prediction-notes" class="notes"></ul>
+      </div>
+    </div>
+  </section>
+  <section id="what-if" hidden>
+    <h2>What-if analysis</h2>
+    <p>Change one measurement and compare with your last submitted inputs. This shows model behavior, not a treatment effect.</p>
+    <div class="panel">
+      <form id="what-if-form">
+        <label>Measurement<select id="what-if-feature"><option value="Glucose">Glucose</option><option value="BMI">Body mass index</option><option value="BloodPressure">Blood pressure</option><option value="Insulin">Insulin</option><option value="SkinThickness">Skin thickness</option></select></label>
+        <label>New value<input id="what-if-value" type="number" min="0" max="1000000" step="any" value="110" required></label>
+        <button type="submit" class="primary">Compare</button>
+      </form>
+      <p id="what-if-result" aria-live="polite">Choose a measurement and enter a new value.</p>
+      <div id="what-if-chart"></div><p id="what-if-error" class="error" role="alert"></p>
+    </div>
+  </section>
+  <section id="evidence">
+    <h2>Model evaluation results</h2>
+    <p>Models are trained and tuned using training and validation data. The test set is used for final evaluation.</p>
+    <div id="study-stats" class="study-stats"></div>
+    <div class="panel">
+      <h3>Test set comparison</h3>
+      <p class="field-note">Every row below uses a threshold of 0.50. The prediction form uses the separate validation-selected threshold. PR-AUC is average precision; a lower Brier score is better.</p>
+      <div class="table-scroll"><table><thead><tr><th>Model</th><th>Accuracy</th><th>Precision</th><th>Recall</th><th>F1</th><th>Specificity</th><th>ROC-AUC</th><th>PR-AUC</th><th>Brier</th></tr></thead><tbody id="results-table"></tbody></table></div>
+      <p id="study-result-note" class="field-note"></p>
+    </div>
+    <details class="panel"><summary>Evaluation charts</summary><div class="plots">
+      <figure><img src="/figures/roc_pr_curves.png" alt="Held-out ROC and precision recall comparisons" loading="lazy"><figcaption>ROC and precision recall curves</figcaption></figure>
+      <figure><img src="/figures/calibration.png" alt="Reliability diagram comparing predicted and observed proportions" loading="lazy"><figcaption>Probability calibration</figcaption></figure>
+      <figure><img src="/figures/confusion_matrices.png" alt="Confusion matrices at default and validation-selected thresholds" loading="lazy"><figcaption>Confusion matrices</figcaption></figure>
+      <figure><img src="/figures/feature_distributions.png" alt="Feature distributions by Outcome in training rows" loading="lazy"><figcaption>Training feature distributions</figcaption></figure>
+    </div></details>
+    <details class="panel"><summary>Study limitations</summary><p>This experiment uses a small historical dataset. Its results do not establish accuracy in another population or clinical safety. Calibration and ensembling do not necessarily improve every metric.</p><ul id="limitations-list"></ul></details>
+  </section>
+</main>
+<footer>Diabetes Prediction System — academic project</footer>
+<script src="/app.js"></script>
+</body>
+</html>

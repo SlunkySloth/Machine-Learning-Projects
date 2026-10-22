@@ -1,0 +1,10 @@
+{
+  "LogisticRegression": 0.6,
+  "RandomForest": 0.56,
+  "GradientBoosting": 0.28,
+  "SVM": 0.30000000000000004,
+  "ANN": 0.39,
+  "DummyPrior": 0.33999999999999997,
+  "RawEnsemble": 0.4,
+  "CalibratedEnsemble": 0.33
+}

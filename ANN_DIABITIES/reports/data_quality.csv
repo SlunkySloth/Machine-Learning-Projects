@@ -1,0 +1,9 @@
+feature,missing_or_zero,missing_pct,zero_sentinel_count,iqr_outliers,minimum,maximum,median
+Pregnancies,0,0.0,0,1,0.0,14.0,3.0
+Glucose,4,0.8695652173913043,4,0,56.0,197.0,117.0
+BloodPressure,18,3.91304347826087,18,12,24.0,114.0,72.0
+SkinThickness,131,28.47826086956522,131,2,7.0,99.0,30.0
+Insulin,215,46.73913043478261,215,12,16.0,744.0,125.0
+BMI,6,1.3043478260869565,6,6,18.2,67.1,32.4
+DiabetesPedigreeFunction,0,0.0,0,16,0.084,2.329,0.389
+Age,0,0.0,0,11,21.0,81.0,29.0

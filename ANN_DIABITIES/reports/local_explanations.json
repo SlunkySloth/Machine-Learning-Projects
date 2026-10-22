@@ -1,0 +1,350 @@
+[
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.6354013975758461,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": 0.36119272021221904,
+      "BloodPressure": 0.0,
+      "SkinThickness": -0.0027023616865060247,
+      "Insulin": 0.005205661362577408,
+      "BMI": -0.024394238231292827,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": 0.064652415973737
+    },
+    "additivity_error": 0.0,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 44,
+    "input": {
+      "Pregnancies": 7.0,
+      "Glucose": 159.0,
+      "BloodPressure": 64.0,
+      "SkinThickness": 0.0,
+      "Insulin": 0.0,
+      "BMI": 27.4,
+      "DiabetesPedigreeFunction": 0.294,
+      "Age": 40.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.1185908239443842,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": -0.17934189153994978,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.0015532893176497036,
+      "Insulin": -0.021502459043160928,
+      "BMI": 0.05215234380254047,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": 0.03428234146219321
+    },
+    "additivity_error": 0.0,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 672,
+    "input": {
+      "Pregnancies": 10.0,
+      "Glucose": 68.0,
+      "BloodPressure": 106.0,
+      "SkinThickness": 23.0,
+      "Insulin": 49.0,
+      "BMI": 35.5,
+      "DiabetesPedigreeFunction": 0.285,
+      "Age": 47.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.22580604064698054,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": -0.01104295116597969,
+      "BloodPressure": 0.0,
+      "SkinThickness": -0.003089633257497262,
+      "Insulin": -0.006766702690052708,
+      "BMI": 0.08211544105262847,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": -0.06685731323722986
+    },
+    "additivity_error": 5.551115123125783e-17,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 700,
+    "input": {
+      "Pregnancies": 2.0,
+      "Glucose": 122.0,
+      "BloodPressure": 76.0,
+      "SkinThickness": 27.0,
+      "Insulin": 200.0,
+      "BMI": 35.9,
+      "DiabetesPedigreeFunction": 0.483,
+      "Age": 26.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.21818814410160212,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": -0.022839592793923367,
+      "BloodPressure": 0.0,
+      "SkinThickness": -0.002812703387929326,
+      "Insulin": 0.003930477794276625,
+      "BMI": -0.021257060560085958,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": 0.029719823104152613
+    },
+    "additivity_error": 0.0,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 630,
+    "input": {
+      "Pregnancies": 7.0,
+      "Glucose": 114.0,
+      "BloodPressure": 64.0,
+      "SkinThickness": 0.0,
+      "Insulin": 0.0,
+      "BMI": 27.4,
+      "DiabetesPedigreeFunction": 0.732,
+      "Age": 34.0
+    },
+    "observed_outcome": 1
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.08310351156243889,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": -0.12465613344350827,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.0001468261501543453,
+      "Insulin": -0.0001241570078665396,
+      "BMI": 0.025297846073501724,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": -0.04900807015495396
+    },
+    "additivity_error": 5.551115123125783e-17,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 81,
+    "input": {
+      "Pregnancies": 2.0,
+      "Glucose": 74.0,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.0,
+      "Insulin": 0.0,
+      "BMI": 0.0,
+      "DiabetesPedigreeFunction": 0.102,
+      "Age": 22.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.11672805505540819,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": -0.09654424572336896,
+      "BloodPressure": 0.0,
+      "SkinThickness": -0.0011772596345395786,
+      "Insulin": -0.013650648190844716,
+      "BMI": 0.022581703043640607,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": -0.025928694384590625
+    },
+    "additivity_error": 6.938893903907228e-17,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 389,
+    "input": {
+      "Pregnancies": 3.0,
+      "Glucose": 100.0,
+      "BloodPressure": 68.0,
+      "SkinThickness": 23.0,
+      "Insulin": 81.0,
+      "BMI": 31.6,
+      "DiabetesPedigreeFunction": 0.949,
+      "Age": 28.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.5106365124081432,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": -0.059485066613769136,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.00482876707913694,
+      "Insulin": 0.010286354093117414,
+      "BMI": 0.25753933416834185,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": 0.0660199237362048
+    },
+    "additivity_error": 1.1102230246251565e-16,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 387,
+    "input": {
+      "Pregnancies": 8.0,
+      "Glucose": 105.0,
+      "BloodPressure": 100.0,
+      "SkinThickness": 36.0,
+      "Insulin": 0.0,
+      "BMI": 43.3,
+      "DiabetesPedigreeFunction": 0.239,
+      "Age": 45.0
+    },
+    "observed_outcome": 1
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.7931412046148294,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": 0.5735527765028625,
+      "BloodPressure": 0.0,
+      "SkinThickness": -0.0020033892461267123,
+      "Insulin": 0.0021504775326313032,
+      "BMI": -0.04724577543842146,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": 0.03523991531877235
+    },
+    "additivity_error": 1.1102230246251565e-16,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 408,
+    "input": {
+      "Pregnancies": 8.0,
+      "Glucose": 197.0,
+      "BloodPressure": 74.0,
+      "SkinThickness": 0.0,
+      "Insulin": 0.0,
+      "BMI": 25.9,
+      "DiabetesPedigreeFunction": 1.191,
+      "Age": 39.0
+    },
+    "observed_outcome": 1
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.08950423238593053,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": -0.07666310105045727,
+      "BloodPressure": 0.0,
+      "SkinThickness": -0.002397953896174676,
+      "Insulin": -0.00015703426133084896,
+      "BMI": 0.0016361929069363945,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": -0.06436107125815461
+    },
+    "additivity_error": 0.0,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 163,
+    "input": {
+      "Pregnancies": 2.0,
+      "Glucose": 100.0,
+      "BloodPressure": 64.0,
+      "SkinThickness": 23.0,
+      "Insulin": 0.0,
+      "BMI": 29.7,
+      "DiabetesPedigreeFunction": 0.368,
+      "Age": 21.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.8691378105816433,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": 0.36248651368306983,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.011297381284198276,
+      "Insulin": 0.007880379215623434,
+      "BMI": 0.2819446596663808,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": -0.025918323212740627
+    },
+    "additivity_error": 0.0,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 335,
+    "input": {
+      "Pregnancies": 0.0,
+      "Glucose": 165.0,
+      "BloodPressure": 76.0,
+      "SkinThickness": 43.0,
+      "Insulin": 255.0,
+      "BMI": 47.9,
+      "DiabetesPedigreeFunction": 0.259,
+      "Age": 26.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.41943610262412373,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": 0.1710792406325226,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.007343162640105051,
+      "Insulin": 0.00516479298019842,
+      "BMI": 0.08516365280657931,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": -0.08076194638039325
+    },
+    "additivity_error": 5.551115123125783e-17,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 471,
+    "input": {
+      "Pregnancies": 0.0,
+      "Glucose": 137.0,
+      "BloodPressure": 70.0,
+      "SkinThickness": 38.0,
+      "Insulin": 0.0,
+      "BMI": 33.2,
+      "DiabetesPedigreeFunction": 0.17,
+      "Age": 22.0
+    },
+    "observed_outcome": 0
+  },
+  {
+    "baseline": 0.23144719994511154,
+    "probability": 0.6733857374323997,
+    "contributions": {
+      "Pregnancies": 0.0,
+      "Glucose": 0.1622999627909834,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.00500299329012845,
+      "Insulin": 0.0031872778091016,
+      "BMI": 0.3052937869686664,
+      "DiabetesPedigreeFunction": 0.0,
+      "Age": -0.033845483371591926
+    },
+    "additivity_error": 2.220446049250313e-16,
+    "background_size": 24,
+    "method": "exact interventional Shapley (256 coalitions)",
+    "row_id": 78,
+    "input": {
+      "Pregnancies": 0.0,
+      "Glucose": 131.0,
+      "BloodPressure": 0.0,
+      "SkinThickness": 0.0,
+      "Insulin": 0.0,
+      "BMI": 43.2,
+      "DiabetesPedigreeFunction": 0.27,
+      "Age": 26.0
+    },
+    "observed_outcome": 1
+  }
+]

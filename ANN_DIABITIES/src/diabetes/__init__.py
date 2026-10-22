@@ -1,0 +1,1 @@
+"""Educational diabetes classification project."""

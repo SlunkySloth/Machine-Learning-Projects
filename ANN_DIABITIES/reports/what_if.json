@@ -1,0 +1,352 @@
+[
+  {
+    "feature": "Glucose",
+    "value": 56.0,
+    "probability": 0.0763105452485692
+  },
+  {
+    "feature": "Glucose",
+    "value": 60.14705882352941,
+    "probability": 0.07725204471512559
+  },
+  {
+    "feature": "Glucose",
+    "value": 64.29411764705883,
+    "probability": 0.07835738782713661
+  },
+  {
+    "feature": "Glucose",
+    "value": 68.44117647058823,
+    "probability": 0.07965078417308886
+  },
+  {
+    "feature": "Glucose",
+    "value": 72.58823529411765,
+    "probability": 0.08115811992098249
+  },
+  {
+    "feature": "Glucose",
+    "value": 76.73529411764706,
+    "probability": 0.0829025403112693
+  },
+  {
+    "feature": "Glucose",
+    "value": 80.88235294117646,
+    "probability": 0.08511761755381506
+  },
+  {
+    "feature": "Glucose",
+    "value": 85.02941176470588,
+    "probability": 0.08756232849489698
+  },
+  {
+    "feature": "Glucose",
+    "value": 89.1764705882353,
+    "probability": 0.0900713076528238
+  },
+  {
+    "feature": "Glucose",
+    "value": 93.32352941176471,
+    "probability": 0.09613134947780932
+  },
+  {
+    "feature": "Glucose",
+    "value": 97.47058823529412,
+    "probability": 0.10202347579110621
+  },
+  {
+    "feature": "Glucose",
+    "value": 101.61764705882354,
+    "probability": 0.11090592606140115
+  },
+  {
+    "feature": "Glucose",
+    "value": 105.76470588235294,
+    "probability": 0.11689608876289927
+  },
+  {
+    "feature": "Glucose",
+    "value": 109.91176470588235,
+    "probability": 0.1332346727826083
+  },
+  {
+    "feature": "Glucose",
+    "value": 114.05882352941177,
+    "probability": 0.14075945190484923
+  },
+  {
+    "feature": "Glucose",
+    "value": 118.20588235294119,
+    "probability": 0.15701415031715066
+  },
+  {
+    "feature": "Glucose",
+    "value": 122.3529411764706,
+    "probability": 0.16244646631369597
+  },
+  {
+    "feature": "Glucose",
+    "value": 126.5,
+    "probability": 0.20266832622107506
+  },
+  {
+    "feature": "Glucose",
+    "value": 130.64705882352942,
+    "probability": 0.2288689827368064
+  },
+  {
+    "feature": "Glucose",
+    "value": 134.79411764705884,
+    "probability": 0.2894170216809696
+  },
+  {
+    "feature": "Glucose",
+    "value": 138.94117647058823,
+    "probability": 0.3143183285914832
+  },
+  {
+    "feature": "Glucose",
+    "value": 143.08823529411765,
+    "probability": 0.3359819537488859
+  },
+  {
+    "feature": "Glucose",
+    "value": 147.23529411764707,
+    "probability": 0.37503463684702393
+  },
+  {
+    "feature": "Glucose",
+    "value": 151.38235294117646,
+    "probability": 0.40699351685569385
+  },
+  {
+    "feature": "Glucose",
+    "value": 155.52941176470588,
+    "probability": 0.5331491306369612
+  },
+  {
+    "feature": "Glucose",
+    "value": 159.6764705882353,
+    "probability": 0.5679008259729312
+  },
+  {
+    "feature": "Glucose",
+    "value": 163.8235294117647,
+    "probability": 0.5979038818734681
+  },
+  {
+    "feature": "Glucose",
+    "value": 167.97058823529414,
+    "probability": 0.6634297980844993
+  },
+  {
+    "feature": "Glucose",
+    "value": 172.11764705882354,
+    "probability": 0.6875112990152952
+  },
+  {
+    "feature": "Glucose",
+    "value": 176.26470588235296,
+    "probability": 0.7080159823300566
+  },
+  {
+    "feature": "Glucose",
+    "value": 180.41176470588238,
+    "probability": 0.7252065202663768
+  },
+  {
+    "feature": "Glucose",
+    "value": 184.55882352941177,
+    "probability": 0.74173425836508
+  },
+  {
+    "feature": "Glucose",
+    "value": 188.7058823529412,
+    "probability": 0.756987136786239
+  },
+  {
+    "feature": "Glucose",
+    "value": 192.8529411764706,
+    "probability": 0.7703788904285347
+  },
+  {
+    "feature": "Glucose",
+    "value": 197.0,
+    "probability": 0.7822121719910088
+  },
+  {
+    "feature": "BMI",
+    "value": 18.2,
+    "probability": 0.08294595184084656
+  },
+  {
+    "feature": "BMI",
+    "value": 19.638235294117646,
+    "probability": 0.08536314533751878
+  },
+  {
+    "feature": "BMI",
+    "value": 21.076470588235292,
+    "probability": 0.08804334517593725
+  },
+  {
+    "feature": "BMI",
+    "value": 22.514705882352942,
+    "probability": 0.09112317905075677
+  },
+  {
+    "feature": "BMI",
+    "value": 23.95294117647059,
+    "probability": 0.0959491187514373
+  },
+  {
+    "feature": "BMI",
+    "value": 25.391176470588235,
+    "probability": 0.10010930307866657
+  },
+  {
+    "feature": "BMI",
+    "value": 26.82941176470588,
+    "probability": 0.11496021665249623
+  },
+  {
+    "feature": "BMI",
+    "value": 28.267647058823528,
+    "probability": 0.1384966410983648
+  },
+  {
+    "feature": "BMI",
+    "value": 29.705882352941174,
+    "probability": 0.16130995214396462
+  },
+  {
+    "feature": "BMI",
+    "value": 31.14411764705882,
+    "probability": 0.17931065016329573
+  },
+  {
+    "feature": "BMI",
+    "value": 32.58235294117647,
+    "probability": 0.19571178778429613
+  },
+  {
+    "feature": "BMI",
+    "value": 34.02058823529411,
+    "probability": 0.2111429046884512
+  },
+  {
+    "feature": "BMI",
+    "value": 35.45882352941176,
+    "probability": 0.22273879157371437
+  },
+  {
+    "feature": "BMI",
+    "value": 36.897058823529406,
+    "probability": 0.2390994062512161
+  },
+  {
+    "feature": "BMI",
+    "value": 38.33529411764705,
+    "probability": 0.25711875013406577
+  },
+  {
+    "feature": "BMI",
+    "value": 39.7735294117647,
+    "probability": 0.2783760783620143
+  },
+  {
+    "feature": "BMI",
+    "value": 41.211764705882345,
+    "probability": 0.32713676629073063
+  },
+  {
+    "feature": "BMI",
+    "value": 42.64999999999999,
+    "probability": 0.38107021164715776
+  },
+  {
+    "feature": "BMI",
+    "value": 44.08823529411764,
+    "probability": 0.4547823056216255
+  },
+  {
+    "feature": "BMI",
+    "value": 45.526470588235284,
+    "probability": 0.4803387777446725
+  },
+  {
+    "feature": "BMI",
+    "value": 46.96470588235293,
+    "probability": 0.5049314749035849
+  },
+  {
+    "feature": "BMI",
+    "value": 48.402941176470584,
+    "probability": 0.5291813569919952
+  },
+  {
+    "feature": "BMI",
+    "value": 49.84117647058823,
+    "probability": 0.551534083808143
+  },
+  {
+    "feature": "BMI",
+    "value": 51.27941176470587,
+    "probability": 0.5732988282811019
+  },
+  {
+    "feature": "BMI",
+    "value": 52.71764705882353,
+    "probability": 0.592504427774796
+  },
+  {
+    "feature": "BMI",
+    "value": 54.15588235294118,
+    "probability": 0.61127391436498
+  },
+  {
+    "feature": "BMI",
+    "value": 55.59411764705882,
+    "probability": 0.6294739540606327
+  },
+  {
+    "feature": "BMI",
+    "value": 57.03235294117647,
+    "probability": 0.6471651580858864
+  },
+  {
+    "feature": "BMI",
+    "value": 58.470588235294116,
+    "probability": 0.6628723343098076
+  },
+  {
+    "feature": "BMI",
+    "value": 59.90882352941176,
+    "probability": 0.6766783530207224
+  },
+  {
+    "feature": "BMI",
+    "value": 61.34705882352941,
+    "probability": 0.6891240541047864
+  },
+  {
+    "feature": "BMI",
+    "value": 62.785294117647055,
+    "probability": 0.7002786692178867
+  },
+  {
+    "feature": "BMI",
+    "value": 64.2235294117647,
+    "probability": 0.7102177823057085
+  },
+  {
+    "feature": "BMI",
+    "value": 65.66176470588235,
+    "probability": 0.7190186657540033
+  },
+  {
+    "feature": "BMI",
+    "value": 67.1,
+    "probability": 0.7267569633665034
+  }
+]
